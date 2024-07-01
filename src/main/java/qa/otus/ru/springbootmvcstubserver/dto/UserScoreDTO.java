@@ -1,4 +1,4 @@
-package qa.otus.ru.SpringBootMVCStubServer.dto;
+package qa.otus.ru.springbootmvcstubserver.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
 @AllArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
 @EqualsAndHashCode
-public class CourseDTO {
+public class UserScoreDTO {
     private String name;
-    private Long price;
+    private Long score;
 }

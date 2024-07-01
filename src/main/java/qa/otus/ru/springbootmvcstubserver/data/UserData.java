@@ -1,13 +1,12 @@
-package qa.otus.ru.SpringBootMVCStubServer.data;
+package qa.otus.ru.springbootmvcstubserver.data;
 
 import org.springframework.stereotype.Component;
-import qa.otus.ru.SpringBootMVCStubServer.dto.UserDTO;
-
+import qa.otus.ru.springbootmvcstubserver.dto.UserDTO;
 import java.util.List;
 import java.util.stream.Stream;
 
 @Component
-public class UserData implements ITestData<UserDTO>{
+public class UserData implements ITestData<UserDTO> {
 
     private final List<UserDTO> userDTOList = Stream.of(
                     UserDTO.builder()

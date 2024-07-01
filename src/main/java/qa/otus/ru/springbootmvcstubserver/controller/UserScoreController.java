@@ -1,12 +1,11 @@
-package qa.otus.ru.SpringBootMVCStubServer.controller;
+package qa.otus.ru.springbootmvcstubserver.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import qa.otus.ru.SpringBootMVCStubServer.data.ITestData;
-import qa.otus.ru.SpringBootMVCStubServer.dto.UserScoreDTO;
-
+import qa.otus.ru.springbootmvcstubserver.data.ITestData;
+import qa.otus.ru.springbootmvcstubserver.dto.UserScoreDTO;
 import java.util.List;
 
 @RestController()
@@ -14,10 +13,10 @@ import java.util.List;
 public class UserScoreController {
 
     @Autowired
-    ITestData<UserScoreDTO> iTestData;
+    ITestData<UserScoreDTO> testData;
 
     @RequestMapping(value = "get/all", method = RequestMethod.GET)
     public List<UserScoreDTO> getUserAll() {
-        return iTestData.getAll();
+        return testData.getAll();
     }
 }

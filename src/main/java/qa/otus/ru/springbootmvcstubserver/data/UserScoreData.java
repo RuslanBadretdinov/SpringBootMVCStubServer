@@ -1,13 +1,12 @@
-package qa.otus.ru.SpringBootMVCStubServer.data;
+package qa.otus.ru.springbootmvcstubserver.data;
 
 import org.springframework.stereotype.Component;
-import qa.otus.ru.SpringBootMVCStubServer.dto.UserScoreDTO;
-
+import qa.otus.ru.springbootmvcstubserver.dto.UserScoreDTO;
 import java.util.List;
 import java.util.stream.Stream;
 
 @Component
-public class UserScoreData implements ITestData<UserScoreDTO>{
+public class UserScoreData implements ITestData<UserScoreDTO> {
 
     private final List<UserScoreDTO> userScoreDTOList = Stream.of(
                     UserScoreDTO.builder()
@@ -31,7 +30,7 @@ public class UserScoreData implements ITestData<UserScoreDTO>{
     }
 
     @Override
-    public UserScoreDTO getById(Integer id) throws NoSuchMethodException{
+    public UserScoreDTO getById(Integer id) throws NoSuchMethodException {
         throw new NoSuchMethodException("Метод getId не разработан");
     }
 }

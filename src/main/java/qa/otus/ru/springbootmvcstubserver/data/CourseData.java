@@ -1,8 +1,7 @@
-package qa.otus.ru.SpringBootMVCStubServer.data;
+package qa.otus.ru.springbootmvcstubserver.data;
 
 import org.springframework.stereotype.Component;
-import qa.otus.ru.SpringBootMVCStubServer.dto.CourseDTO;
-
+import qa.otus.ru.springbootmvcstubserver.dto.CourseDTO;
 import java.util.List;
 import java.util.stream.Stream;
 

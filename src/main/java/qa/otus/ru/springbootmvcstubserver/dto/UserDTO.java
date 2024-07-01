@@ -1,4 +1,4 @@
-package qa.otus.ru.SpringBootMVCStubServer.dto;
+package qa.otus.ru.springbootmvcstubserver.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
