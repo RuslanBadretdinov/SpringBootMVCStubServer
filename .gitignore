@@ -1,0 +1,6 @@
+# Folder Ignoring
+target
+.idea
+
+# File Ignoring
+*.iml
